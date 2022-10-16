@@ -1,0 +1,26 @@
+3. Program to replace a particular element in an array.
+Ans:
+import java.util.*;
+import java.io.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner (System.in);
+        System.out.println("Enter the number of entries:");
+        int n = obj.nextInt();
+        int a[]=new int[10];
+        int i ;
+        for(i=0;i<n;i++)
+        {
+            System.out.println("Enter the " + (i+1)+ " element :");
+            a[i]=obj.nextInt();
+        }
+        System.out.println("Enter the index value to be replaced(1-"+n+"):");
+        int search=obj.nextInt();
+        System.out.println("\n Enter the value:");
+        int element=obj.nextInt();
+        a[search-1]=element;
+    
+        for(i=0;i<n;i++)
+            System.out.println(a[i]+"\t");
+        }
+}
